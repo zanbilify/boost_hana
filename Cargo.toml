@@ -1,0 +1,21 @@
+[package]
+name = "boost_hana"
+description = "Boost C++ library boost_hana packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_hana"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_hana"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_fusion = { version = "0.1.0", path = "../boost_fusion" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_tuple = { version = "0.1.0", path = "../boost_tuple" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
